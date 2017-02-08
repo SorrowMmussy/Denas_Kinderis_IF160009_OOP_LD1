@@ -1,0 +1,43 @@
+void read() {
+
+	cout << ("Enter file name: ");
+	cin >> name;	
+	ifstream file(name);
+
+	if (!file) {
+		cout << ("Error while openining file!") << endl;
+		system("pause");
+	}
+	else {
+		cout << ("Reading...") << endl;
+		int i = 0;
+		while (!file.eof()) {
+			cout << "=========== NAUJA EILUTE ================\n";
+			file >> A[i].number;
+			cout << "Eil.nr --------- " << A[i].number <<endl;
+			file >> A[i].LicenzePlate;
+			cout << " Valstybinis numeris: " << A[i].LicenzePlate << endl;
+			file >> A[i].Model;
+			cout << " Automobilio marke: " << A[i].Model << endl;
+			file >> A[i].Year;
+			cout << " Pagaminimo metai: " << A[i].Year << endl;
+			file >> A[i].Color;
+			cout << " Automobilio spalva: " << A[i].Color << endl;
+			file >> A[i].FuelType;
+			cout << " Kuro tipas: " << A[i].FuelType << endl;
+			file >> A[i].Power;
+			cout << " Automobilio galia: " << A[i].Power << endl;
+			file >> A[i].FuelUsageC;
+			cout << " Kuro sanaudos mieste: " << A[i].FuelUsageC << endl;
+			file >> A[i].FuelUsageOC;
+			cout << " Kuro sanaudos uzmiestyje: " << A[i].FuelUsageOC << endl;
+			file >> A[i].Chasy;
+			cout << " Kebulo tipas: " << A[i].Chasy << endl;
+			//cout << i << endl;
+			i++;
+			system("pause");
+		}
+	}		
+	file.close();
+	cout << ("Reading finnished!") << endl;
+}

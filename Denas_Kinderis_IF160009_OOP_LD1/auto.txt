@@ -1,0 +1,4 @@
+1 MIG29  Subaru_Legacy Juoda 2004 benzinas 120 10 8 sedanas
+2 888888 BMW_745 Balta 2002 dyzelinas 300 8 6 kupe
+3 007 MERCEDES_BENZ_S320 Pilka 1999 dujos 240 6 4 universalas
+4 001 HARLEY_DAVIDSON_V-ROD Pilka 2003 elektra 90 4 8 mikroautobusas
